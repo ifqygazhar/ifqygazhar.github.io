@@ -89,12 +89,12 @@
       <div class="container my-auto py-4">
         <div class="row">
           <div class="col-lg-7 text-center text-lg-start align-self-center order-1 order-lg-0 wow fadeIn">
-            <h1 class="text-12 fw-300 mb-0 text-uppercase">Hi, I'm a Freelancer</h1>
+            <h1 class="text-11 fw-300 mb-0 text-uppercase">Hi, I'm a Freelancer</h1>
             <div class="typed-strings">
               <p>UI/UX Designer</p>
               <p>Mobile Developer</p>
             </div>
-            <h2 class="text-21 fw-600 text-uppercase mb-0 ms-n1"><span class="typed"></span></h2>
+            <h2 class="text-16 fw-600 text-uppercase mb-0 ms-n1"><span class="typed"></span></h2>
             <p class="text-5">based in Pangandaran, West Java.</p>
             <a href="https://drive.google.com/file/d/1Yxhi7f3SRyfcvBBsfs23BbTGk16_NRXt/view" class="btn btn-dark rounded-0 mt-3"><i class="fa-solid fa-download"></i> Download cv</a> <a href="mailto:ifqygazhar@gmail.com" class="btn btn-link text-dark mt-3">Email me<span class="text-4 ms-2"><i class="fa-solid fa-envelope"></i></span></a>
 		      </div>
@@ -299,20 +299,18 @@
             <!-- Contact Form -->
             <form id="contact-form" class="form-border" action="mailto:ifqygazhar@gmail.com" method="post" enctype="text/plain">
               <div class="row g-4">
+
                 <div class="col-12">
                   <label class="form-label" for="name">What is Your Name:</label>
                   <input id="name" name="name" type="text" class="form-control py-1" required >
                 </div>
-                <div class="col-12">
-                  <label class="form-label" for="email">Your Email Address:</label>
-                  <input id="email" name="email" type="email" class="form-control py-1" required >
-                </div>
+                
                 <div class="col-12">
                   <label class="form-label" for="form-message">How can I Help you?:</label>
-                  <textarea id="form-message" name="form-message" class="form-control py-1" rows="4" required ></textarea>
+                  <textarea id="form-message" name="message" class="form-control py-1" rows="4" required ></textarea>
                 </div>
                 <div class="col-12 text-center text-lg-start">
-                  <button id="submit-btn" class="btn btn-dark rounded-0" type="submit">Send <span class="ms-3"><i class="fas fa-arrow-right"></i></span></button>
+                  <button id="submit-btn" class="btn btn-dark rounded-0" onclick="sendEmail()" type="submit">Send <span class="ms-3"><i class="fas fa-arrow-right"></i></span></button>
                 </div>
               </div>
             </form>
@@ -371,5 +369,25 @@
 <script src="js/switcher.min.js"></script> 
 <!-- Custom Script --> 
 <script src="js/theme.js"></script>
+
+<script>
+  function sendEmail() {
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("form-message").value;
+
+      
+      const subject = "Estimate Project";
+        const body = "Name: " + name + "\n" +
+                  
+                   "Message: " + message;
+
+
+     
+      const mailtoURL = "mailto:ifqygazhar@gmail.com" + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+     
+      window.location.href = mailtoURL;
+  }
+</script>
 </body>
 </html>
