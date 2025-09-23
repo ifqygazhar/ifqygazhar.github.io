@@ -1,0 +1,466 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tab animations */
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card hover effects */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Enhanced ATS-friendly print styles */
+@media print {
+    @page {
+        margin: 0.5in;
+        size: A4;
+    }
+
+    /* Hide non-essential elements */
+    .no-print {
+        display: none !important;
+    }
+
+    header,
+    footer,
+    .tab-navigation {
+        display: none !important;
+    }
+
+    /* Show only CV content */
+    #projects {
+        display: none !important;
+    }
+
+    #cv {
+        display: block !important;
+    }
+
+    /* Reset all colors and backgrounds for ATS */
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border-color: black !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-family: "Times New Roman", Times, serif !important;
+        font-size: 11pt !important;
+        line-height: 1.3 !important;
+        background: white !important;
+        color: black !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Container adjustments */
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* CV section adjustments */
+    #cv .bg-white {
+        background: white !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Header section */
+    .cv-header {
+        text-align: center;
+        margin-bottom: 20pt;
+        border-bottom: 1pt solid black;
+        padding-bottom: 10pt;
+    }
+
+    .cv-header h2 {
+        font-size: 18pt !important;
+        font-weight: bold !important;
+        margin: 0 0 5pt 0 !important;
+    }
+
+    .cv-header h3 {
+        font-size: 14pt !important;
+        margin: 0 0 10pt 0 !important;
+    }
+
+    .cv-header p {
+        font-size: 10pt !important;
+        margin: 0 0 8pt 0 !important;
+    }
+
+    /* Contact info */
+    .contact-info {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 15pt !important;
+        font-size: 10pt !important;
+    }
+
+    .contact-info a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+    /* Section headers */
+    .section-header {
+        font-size: 14pt !important;
+        font-weight: bold !important;
+        margin: 15pt 0 8pt 0 !important;
+        border-bottom: 1pt solid black !important;
+        padding-bottom: 2pt !important;
+    }
+
+    /* Skills section */
+    .skills-grid {
+        display: block !important;
+    }
+
+    .skill-category {
+        margin-bottom: 10pt !important;
+    }
+
+    .skill-category h4 {
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        margin: 0 0 3pt 0 !important;
+    }
+
+    .skills-list {
+        font-size: 10pt !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Experience section */
+    .experience-item {
+        margin-bottom: 12pt !important;
+        break-inside: avoid !important;
+    }
+
+    .experience-item h4 {
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        margin: 0 0 2pt 0 !important;
+    }
+
+    .experience-company {
+        font-size: 11pt !important;
+        font-weight: bold !important;
+        margin: 0 0 2pt 0 !important;
+    }
+
+    .experience-date {
+        font-size: 10pt !important;
+        font-style: italic !important;
+        margin: 0 0 5pt 0 !important;
+    }
+
+    .experience-list {
+        font-size: 10pt !important;
+        margin-left: 15pt !important;
+        line-height: 1.2 !important;
+    }
+
+    .experience-list li {
+        margin-bottom: 2pt !important;
+    }
+
+    /* Education and Certifications */
+    .education-item,
+    .cert-item {
+        margin-bottom: 8pt !important;
+    }
+
+    .education-item h4,
+    .cert-item h4 {
+        font-size: 12pt !important;
+        font-weight: bold !important;
+        margin: 0 0 2pt 0 !important;
+    }
+
+    .education-item p,
+    .cert-item p {
+        font-size: 10pt !important;
+        margin: 0 0 2pt 0 !important;
+    }
+
+    /* Remove all animations and transitions */
+    .tab-content {
+        animation: none !important;
+    }
+
+    /* Hide profile image for ATS */
+    .profile-image {
+        display: none !important;
+    }
+
+    /* Ensure no page breaks in bad places */
+    .section-header {
+        page-break-after: avoid !important;
+    }
+
+    .experience-item,
+    .education-item,
+    .cert-item {
+        page-break-inside: avoid !important;
+    }
+
+    /* Hide notifications completely in print */
+    .notification {
+        display: none !important;
+    }
+
+    /* Remove print title and URL */
+    title {
+        display: none !important;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #4b5563;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+/* Theme transition */
+* {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Gradient background */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dark .gradient-bg {
+    background: linear-gradient(135deg, #4c1d95 0%, #1e3a8a 100%);
+}
+
+/* Improved Toggle switch with 3 states */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cbd5e1;
+    transition: 0.4s;
+    border-radius: 34px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Auto mode (default) */
+.toggle-switch.auto .slider {
+    background: linear-gradient(135deg, #fbbf24 0%, #1e293b 100%);
+}
+
+.toggle-switch.auto .slider:before {
+    transform: translateX(32px);
+    background-color: #f8fafc;
+}
+
+/* Light mode */
+.toggle-switch.light .slider {
+    background-color: #fbbf24;
+}
+
+.toggle-switch.light .slider:before {
+    transform: translateX(0);
+    background-color: #fff;
+}
+
+/* Dark mode */
+.toggle-switch.dark .slider {
+    background-color: #1e293b;
+}
+
+.toggle-switch.dark .slider:before {
+    transform: translateX(60px);
+    background-color: #f8fafc;
+}
+
+/* Theme icons */
+.theme-icon {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-icon.active {
+    color: #4f46e5;
+    transform: scale(1.2);
+}
+
+.theme-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Skill badges animation */
+.skill-badge {
+    transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Theme indicator */
+.theme-indicator {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.toggle-switch:hover .theme-indicator {
+    opacity: 1;
+}
+
+/* Print button styles */
+.print-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.print-btn:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.print-btn:active {
+    transform: translateY(0);
+}
+
+.dark .print-btn {
+    background: #6366f1;
+}
+
+.dark .print-btn:hover {
+    background: #4f46e5;
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    background: #4f46e5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notification.show {
+    transform: translateY(0);
+}

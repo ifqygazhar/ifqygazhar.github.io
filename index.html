@@ -1,541 +1,871 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio profesional Ifqy Gifha Azhar - Mobile Developer with 2+ years of experience in building high-quality mobile applications."
+        />
+        <meta
+            name="keywords"
+            content="flutter developer, kotlin developer, android developer, backend developer, full stack developer, web developer, ifqy gifha azhar, ifqy, gifha, azhar"
+        />
+        <meta name="author" content="Ifqy Gifha Azhar" />
+        <meta name="robots" content="index, follow" />
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-<!-- <link href="images/favicon.png" rel="icon" /> -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-<link rel="manifest" href="assets/icon/site.webmanifest">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ifqy.dev/" />
+        <meta
+            property="og:title"
+            content="Ifqy Gifha Azhar - Mobile Developer Portfolio"
+        />
+        <meta
+            property="og:description"
+            content="Portfolio profesional Ifqy Gifha Azhar - Mobile Developer with 2+ years of experience in building high-quality mobile applications."
+        />
+        <meta
+            property="og:image"
+            content="https://ifqy.dev/assets/profile.jpeg"
+        />
 
-<title>Ifqygazhar - Personal Portfolio</title>
-<meta name="keywords" content="ifqygazhar, ifqy gifha azhar, Flutter Developer, UI/UX Designer">
-<meta name="author" content="ifqygazhar,ifqygazhar@gmail.com">
-<meta name='url' content='http://ifqygazhar.com'>
-<meta name='subject' content='Ifqy gifha azhar portfolio'>
-<meta name="robots" content="index,follow">
-<meta name='topic' content='Portfolio'>
-<meta name='copyright' content='ifqygazhar'>
-<meta name="description" content="Ifqy gifha azhar (ifqygazhar),Ifqy gifha azhar or ifqygazhar is a freelance UI/UX Designer and Flutter Mobile Developer.">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://ifqy.dev/" />
+        <meta
+            property="twitter:title"
+            content="Ifqy Gifha Azhar - Mobile Developer Portfolio"
+        />
+        <meta
+            property="twitter:description"
+            content="Portfolio profesional Ifqy Gifha Azhar - Mobile Developer with 2+ years of experience in building high-quality mobile applications."
+        />
+        <meta
+            property="twitter:image"
+            content="https://ifqy.dev/assets/profile.jpeg"
+        />
 
-<!-- Web Fonts -->
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
-<!-- breadcumb -->
-<script type="application/ld+json">
-  {
-    "@context": "https://ifqygazhar.com",
-    "@type": "Personal",
-    "name": "ifqygazhar",
-    "url": "https://ifqygazhar.com",
-    "logo": "https://ifqygazhar.com/assets/images/profile.png",
-    "sameAs": [
-      "https://github.com/ifqygazhar",
-      "https://www.linkedin.com/in/ifqygazhar/",
-      "https://www.instagram.com/ifqygifha_azhar/",
-      "https://dribbble.com/ifqyGazhar"
-    ]
-  }
-  </script>
-<!-- Stylesheet
-============================== -->
-<!-- Animate -->
-<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-<!-- Font Awesome Icon -->
-<link rel="stylesheet" type="text/css" href="css/all.min.css" />
-<!-- Owl Carousel -->
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-<!-- Magnific Popup -->
-<link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
-<!-- Custom Stylesheet -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Ifqy Gifha Azhar",
+                "jobTitle": "Mobile Developer",
+                "description": "Mobile Developer with 2+ years of experience in building high-quality mobile applications.",
+                "url": "https://ifqy.dev/",
+                "image": "https://ifqy.dev/assets/profile.jpeg",
+                "email": "ifqygazhar@gmail.com",
+                "telephone": "+6285156298681",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bandung",
+                    "addressCountry": "Indonesia"
+                },
+                "sameAs": [
+                    "https://linkedin.com/in/ifqygazhar",
+                    "https://github.com/ifqygazhar"
+                ]
+            }
+        </script>
 
-<script src="js/fontawesome.js"></script>
+        <title>Ifqy Gifha Azhar - Mobile Developer Portfolio</title>
 
-</head>
+        <!-- Tailwind CSS -->
+        <script src="js/tailwindcss.js"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+            };
+        </script>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
 
-<!-- Preloader -->
-<div class="preloader">
-  <div class="lds-ellipsis">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
-<!-- Preloader End --> 
+        <!-- Data File -->
+        <script src="js/data.js"></script>
 
-<!-- Document Wrapper   
-=============================== -->
-<div id="main-wrapper"> 
-  
-  <!-- Header -->
-  <header id="header" class="sticky-top"> 
-    <!-- Navbar -->
-    <nav class="primary-menu navbar navbar-expand-none navbar-overlay navbar-overlay-dark bg-transparent border-bottom-0 text-5 fw-600">
-      <div class="container"> 
-        <div class="text-3 ms-auto me-2"><span class="text-4 me-2"><i class="fas fa-phone"></i></span><a class="text-dark" href="https://wa.me/+6285156298681">+62 851 5629 8681</a></div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
-        <div id="header-nav" class="collapse navbar-collapse">
-          <div class="d-flex flex-column h-100 align-items-center justify-content-center">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll active" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About Me</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Resume</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact Me</a></li>
-	     <li class="nav-item"><a class="nav-link" href="https://drive.google.com/drive/folders/1Ah78BMVuyyc2c9PWgbti7iNVjaDZfBCr?usp=sharing">Certificate</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="/posts">Blog</a></li> -->
-            </ul>
-            <ul class="social-icons social-icons-light social-icons-lg social-icons-light d-inline-flex mt-4">
-              <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://github.com/ifqygazhar" target="_blank" title="" data-bs-original-title="Twitter"><i class="fab fa-github"></i></a></li>
-              <li class="social-icons-instagram"><a data-bs-toggle="tooltip" href="https://www.instagram.com/ifqygifha_azhar/?hl=id" target="_blank" title="" data-bs-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
-              <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/ifqygazhar/" target="_blank" title="" data-bs-original-title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="social-icons-dribbble"><a data-bs-toggle="tooltip" href="https://dribbble.com/ifqyGazhar" target="_blank" title="" data-bs-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End --> 
-  </header>
-  <!-- Header End --> 
-  
-  <!-- Content
-  ============================================= -->
-  <div id="content" role="main"> 
-    
-    <!-- Intro
-    ============================================= -->
-    <section id="home" class="bg-primary d-flex fullscreen position-relative py-5">
-      <div class="container my-auto py-4">
-        <div class="row">
-          <div class="col-lg-7 text-center text-lg-start align-self-center order-1 order-lg-0 wow fadeIn">
-            <h1 class="text-11 fw-300 mb-0 text-uppercase">Hi, I'm a Freelancer</h1>
-            <div class="typed-strings">
-              <p>UI/UX Designer</p>
-              <p>Mobile Developer</p>
-            </div>
-            <h2 class="text-16 fw-600 text-uppercase mb-0 ms-n1"><span class="typed"></span></h2>
-            <p class="text-5">based in Pangandaran, West Java.</p>
-            <a href="https://drive.google.com/file/d/1y_er4lrQvT-8j0OaP3z_rWk5eBYChv6h/view" class="btn btn-dark rounded-0 mt-3"><i class="fa-solid fa-download"></i> Download cv</a> <a href="mailto:ifqygazhar@gmail.com" class="btn btn-link text-dark mt-3">Email me<span class="text-4 ms-2"><i class="fa-solid fa-envelope"></i></span></a>
-		      </div>
-          <div class="col-lg-5 text-center align-self-center mb-4 mb-lg-0 order-0 order-lg-1">
-            <div class="bg-light rounded-pill d-inline-block p-3 shadow-lg wow zoomIn"> <img class="img-fluid rounded-pill d-block" src="assets/images/profile.png" title="ifqygazhar" loading="eager" alt="Ifqy Gifha Azhar Profile Pictures"></div>
-          </div>
-        </div>
-      </div>
-      <a href="#about" class="scroll-down-arrow text-dark smooth-scroll"><span class="animated"><i class="fas fa-arrow-down"></i></span></a> </section>
-    <!-- Intro end --> 
-    
-    <!-- About
-    ============================================= -->
-    <section id="about" class="section">
-      <div class="container"> 
-        <!-- Heading -->
-        <p class="text-center mb-2 wow fadeInUp"><span class="bg-primary text-dark px-2">About Me</span></p>
-        <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">Know Me More</h2>
-        <!-- Heading end-->
-        
-        <div class="row">
-          <div class="col-lg-8 text-center text-lg-start wow fadeInUp">
-            <h2 class="text-8 fw-400 mb-3">Hi, I'm <span class="fw-700 border-bottom border-3 border-primary">Ifqy Gifha Azhar</span></h2>
-            <p class="text-5">I'm a UI/UX designer focus on Mobile Developer With Flutter I work with team and individual. My moto is work with happines and make client happy with smile.</p>
-          </div>
-          
-        </div>
-        <div class="row gy-3 mt-4">
-          <div class="col-6 col-lg-3 wow fadeInUp">
-            <p class="text-muted fw-500 mb-0">Name:</p>
-            <p class="text-4 text-dark fw-600 mb-0">Ifqy Gifha Azhar</p>
-          </div>
-          <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
-            <p class="text-muted fw-500 mb-0">Email:</p>
-            <p class="text-2 fw-600 mb-0"><a class="link-dark" href="mailto:ifqygazhar@gmail.com">ifqygazhar@gmail.com</a></p>
-          </div>
-          <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-            <p class="text-muted fw-500 mb-0">Date of birth:</p>
-            <p class="text-4 text-dark fw-600 mb-0">12 August, 2004</p>
-          </div>
-          <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
-            <p class="text-muted fw-500 mb-0">From:</p>
-            <p class="text-4 text-dark fw-600 mb-0">Pangandaran</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About end --> 
-    
-     <!-- Resume
-    ============================================= -->
-    <section id="resume" class="section">
-      <div class="container"> 
-        <!-- Heading -->
-        <p class=" text-center mb-2 wow fadeInUp"><span class="bg-primary text-dark px-2">Resume</span></p>
-        <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">A summary of My Resume</h2>
-        <!-- Heading end-->
-        
-        <div class="row g-5 mt-5"> 
-          <!-- My Education -->
-          <div class="col-lg-6 wow fadeInUp">
-            <h2 class="text-7 fw-600 mb-4 pb-2">My Education</h2>
-            <div class="border-start border-2 border-primary ps-3">
-              <h3 class="text-5">Computer and Network Engineering</h3>
-              <p class="mb-2">Smkn 1 Cijulang / 2019 - 2022</p>
-              <p class="text-muted">Learn Computer and network basic on high school in Smkn 1 Cijulang from Pangandaran West Java.</p>
-              <hr class="my-4">
-              <h3 class="text-5">Informatics Engineering</h3>
-              <p class="mb-2">University Technology Bandung / 2022 - Now</p>
-              <p class="text-muted">i'm student in University Technology Bandung from Kota Bandung West Java.</p>
-              
-            </div>
-          </div>
-          <!-- My Experience -->
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-            <h2 class="text-7 fw-600 mb-4 pb-2">My Experience</h2>
-            <div class="border-start border-2 border-primary ps-3">
-              <h3 class="text-5">Freelance UI/UX Designer</h3>
-              <p class="mb-2">2019 - Now</p>
-              <p class="text-muted">Work individually or in a team with remote or in-office work.</p>
-              <hr class="my-4">
-              <h3 class="text-5">Freelance Flutter Mobile Developer</h3>
-              <p class="mb-2">2023 - Now</p>
-              <p class="text-muted">Work individually or in a team with remote or in-office work.</p>
-              <hr class="my-4">
-              <h3 class="text-5">UI/UX Designer</h3>
-              <p class="mb-2">PT warung usaha indonesia / 2020 - 2021</p>
-              <p class="text-muted">Under PT warung usaha indonesia as a UI/UX designer to
-                working on the project bankwaqf sunduq application malaysia and
-                Indonesia using figma software tools.</p>
-              <hr class="my-4">
-              <h3 class="text-5">Wordpress Web Developer</h3>
-              <p class="mb-2">Sman 12 surabaya / Jun 2021 - Jul 2021</p>
-              <p class="text-muted">Working on remote create website for highschool.</p>
-              <hr class="my-4">
-              <h3 class="text-5">Flutter Developer</h3>
-              <p class="mb-2">Studyo.io / Sep 2024 - Now</p>
-              <p class="text-muted">Working on Flutter team and collaboration with team created
-                Essay platform. Implemented Ai on platfrom, use Firebase for
-                Database and Authentication.</p>
-              <hr class="my-4">
-              <h3 class="text-5">Mobile Developer Cohort</h3>
-              <p class="mb-2">Bangkit Academy / Sep 2024 - Now</p>
-              <p class="text-muted">Learn Android Native Development use Kotlin Language with
-                Android Views (XML), learn how to consume rest-api from
-                backend also learn implemented AI to Android Native.</p>
-            </div>
-          </div>
-        </div>
-        </div></section>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style2.css" />
 
-         <!-- Portfolio
-    ============================================= -->
-    <section id="portfolio" class="section bg-light">
-      <div class="container"> 
-        <!-- Heading -->
-        <p class=" text-center mb-2 wow fadeInUp"><span class="bg-primary text-dark px-2">Portfolio</span></p>
-        <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">Some of my most recent projects</h2>
-        <!-- Heading end--> 
-        
-        <!-- Filter Menu -->
-        <ul class="portfolio-menu nav nav-tabs fw-600 justify-content-start justify-content-md-center border-bottom-0 mb-4 wow fadeInUp">
-          <li class="nav-item"> <a data-filter="*" class="nav-link rounded-0 active" href="">All</a></li>
-          <li class="nav-item"> <a data-filter=".mobile" href="" class="nav-link rounded-0">Mobile</a></li>
-          <li class="nav-item"> <a data-filter=".web" href="" class="nav-link rounded-0">Web</a></li>
-          <li class="nav-item"> <a data-filter=".cert" href="" class="nav-link rounded-0">Certificates</a></li>
-        </ul>
+        <style>
+            /* Language selector styles */
+            .language-selector {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 0.5rem;
+                padding: 0.25rem;
+            }
 
-        <!-- Filter Menu end -->
-        <div class="portfolio wow fadeInUp">
-          <div class="row g-4 mt-3 portfolio-filter">
+            .language-btn {
+                padding: 0.25rem 0.75rem;
+                border-radius: 0.375rem;
+                font-size: 0.875rem;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                border: none;
+                background: transparent;
+                color: inherit;
+            }
 
-            <div class="col-sm-6 col-lg-4 mobile">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/dicoding/beginner/beginner.png" alt="beginner dicoding ifqy gifha azhar certificates" loading="lazy">
-                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/beginner.html"></a>
-                    <div class="portfolio-overlay-details">
-                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
-                      <h5 class="text-white text-5">Todo App</h5>
-                      <span class="text-light">Mobile</span> </div>
-                  </div>
+            .language-btn:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            .language-btn.active {
+                background: rgba(99, 102, 241, 0.8);
+                color: white;
+            }
+
+            .dark .language-btn.active {
+                background: rgba(129, 140, 248, 0.8);
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+        <!-- Print Button -->
+        <button onclick="printCV()" class="print-btn no-print">
+            <i class="fas fa-print"></i>
+            <span data-text="printCV">Cetak CV</span>
+        </button>
+
+        <!-- Header -->
+        <header
+            class="bg-white dark:bg-gray-800 shadow-md dark:shadow-gray-900/50 sticky top-0 z-50 no-print"
+        >
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <h1
+                        class="text-2xl font-bold text-indigo-600 dark:text-indigo-400"
+                        id="headerName"
+                    >
+                        Ifqy Gifha Azhar
+                    </h1>
+
+                    <!-- Controls Container -->
+                    <div class="flex items-center space-x-4">
+                        <!-- Language Selector -->
+                        <div class="language-selector">
+                            <button
+                                class="language-btn active"
+                                data-lang="id"
+                                onclick="setLanguage('id')"
+                            >
+                                ID
+                            </button>
+                            <button
+                                class="language-btn"
+                                data-lang="en"
+                                onclick="setLanguage('en')"
+                            >
+                                EN
+                            </button>
+                        </div>
+
+                        <!-- Theme Toggle -->
+                        <div class="flex items-center space-x-3">
+                            <span
+                                class="theme-icon text-sm text-yellow-500"
+                                id="sunIcon"
+                                onclick="setThemeMode('light')"
+                            >
+                                <i class="fas fa-sun"></i>
+                            </span>
+                            <div
+                                class="toggle-switch auto"
+                                id="themeSwitch"
+                                onclick="cycleTheme()"
+                            >
+                                <input
+                                    type="checkbox"
+                                    id="themeToggle"
+                                    style="pointer-events: none"
+                                />
+                                <span class="slider"></span>
+                                <div
+                                    class="theme-indicator"
+                                    id="themeIndicator"
+                                >
+                                    Auto
+                                </div>
+                            </div>
+                            <span
+                                class="theme-icon text-sm text-blue-400"
+                                id="moonIcon"
+                                onclick="setThemeMode('dark')"
+                            >
+                                <i class="fas fa-moon"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- Mobile Menu -->
+                <nav id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                    <a
+                        href="#cv"
+                        class="block py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                        data-text="cv"
+                        >CV</a
+                    >
+                    <a
+                        href="#projects"
+                        class="block py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                        data-text="projects"
+                        >Proyek</a
+                    >
+                    <a
+                        href="#contact"
+                        class="block py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                        data-text="contact"
+                        >Kontak</a
+                    >
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-8">
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-8 no-print tab-navigation">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-1 inline-flex"
+                >
+                    <button
+                        onclick="showTab('cv')"
+                        id="cvTab"
+                        class="tab-btn px-6 py-2 rounded-md font-medium transition-all duration-300 bg-indigo-600 text-white"
+                    >
+                        <i class="fas fa-file-alt mr-2"></i
+                        ><span data-text="cv">CV</span>
+                    </button>
+                    <button
+                        onclick="showTab('projects')"
+                        id="projectsTab"
+                        class="tab-btn px-6 py-2 rounded-md font-medium transition-all duration-300 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100"
+                    >
+                        <i class="fas fa-folder-open mr-2"></i
+                        ><span data-text="projects">Proyek</span>
+                    </button>
+                </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4 mobile">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/dicoding/intermediate/intermediate.png" alt="intermediate project dicoding ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/intermediate.html"></a>
-                    <div class="portfolio-overlay-details">
-                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
-                      <h5 class="text-white text-5">Restaurant App</h5>
-                      <span class="text-light">Mobile</span> </div>
-                  </div>
+            <!-- CV Content -->
+            <section id="cv" class="tab-content">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 max-w-4xl mx-auto"
+                >
+                    <!-- Personal Information -->
+                    <div class="mb-8 cv-header" id="personalInfoSection">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="mb-8">
+                        <h3
+                            class="text-2xl font-bold mb-4 border-b-2 border-indigo-600 dark:border-indigo-400 pb-2 section-header"
+                            data-text="skills"
+                        >
+                            Keahlian
+                        </h3>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 gap-6 skills-grid"
+                            id="skillsSection"
+                        >
+                            <!-- Dynamic content will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="mb-8">
+                        <h3
+                            class="text-2xl font-bold mb-4 border-b-2 border-indigo-600 dark:border-indigo-400 pb-2 section-header"
+                            data-text="workExperience"
+                        >
+                            Pengalaman Kerja
+                        </h3>
+                        <div class="space-y-6" id="experienceSection">
+                            <!-- Dynamic content will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="mb-8">
+                        <h3
+                            class="text-2xl font-bold mb-4 border-b-2 border-indigo-600 dark:border-indigo-400 pb-2 section-header"
+                            data-text="education"
+                        >
+                            Pendidikan
+                        </h3>
+                        <div id="educationSection">
+                            <!-- Dynamic content will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div>
+                        <h3
+                            class="text-2xl font-bold mb-4 border-b-2 border-indigo-600 dark:border-indigo-400 pb-2 section-header"
+                            data-text="certifications"
+                        >
+                            Sertifikasi
+                        </h3>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 gap-4"
+                            id="certificationsSection"
+                        >
+                            <!-- Dynamic content will be loaded here -->
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </section>
+
+            <!-- Projects Content -->
+            <section id="projects" class="tab-content hidden">
+                <div class="max-w-6xl mx-auto">
+                    <h2
+                        class="text-3xl font-bold text-center mb-8"
+                        data-text="myProjects"
+                    >
+                        Proyek Saya
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                        id="projectsSection"
+                    >
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            id="contact"
+            class="bg-gray-800 dark:bg-gray-900 text-white py-8 mt-16"
+        >
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4" data-text="letsConnect">
+                        Mari Terhubung
+                    </h3>
+                    <p class="mb-6" data-text="footerDescription">
+                        Tertarik untuk bekerja sama? Jangan ragu untuk
+                        menghubungi!
+                    </p>
+                    <div
+                        class="flex justify-center space-x-4 mb-6"
+                        id="footerContacts"
+                    >
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        © <span id="footerYear"></span>
+                        <span id="footerName">Ifqy Gifha Azhar</span>.
+                        <span data-text="allRightsReserved"
+                            >Semua hak dilindungi.</span
+                        >
+                    </p>
+                </div>
             </div>
+        </footer>
 
-            <div class="col-sm-6 col-lg-4 mobile">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/dicoding/expert/expert.png" alt="expert project dicoding ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/expert.html"></a>
-                    <div class="portfolio-overlay-details">
-                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
-                      <h5 class="text-white text-5">Story App</h5>
-                      <span class="text-light">Mobile</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- JavaScript -->
+        <script>
+            document.getElementById("footerYear").textContent =
+                new Date().getFullYear();
 
-            <div class="col-sm-6 col-lg-4 mobile">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/images/banner.png" alt="expert project dicoding ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/mangapp.html"></a>
-                    <div class="portfolio-overlay-details">
-                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
-                      <h5 class="text-white text-5">Mangapp</h5>
-                      <span class="text-light">Mobile</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-sm-6 col-lg-4 mobile">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/images/isyara.png" alt="Capstone project bangkit Isyara ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/isyara.html"></a>
-                    <div class="portfolio-overlay-details">
-                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
-                      <h5 class="text-white text-5">Isyara</h5>
-                      <span class="text-light">Mobile</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            // Update text content based on current language
+            function updateTextContent() {
+                const texts = getCurrentUITexts();
+                document.querySelectorAll("[data-text]").forEach((element) => {
+                    const key = element.getAttribute("data-text");
+                    if (texts[key]) {
+                        element.textContent = texts[key];
+                    }
+                });
+            }
 
-            <div class="col-sm-6 col-lg-4 web">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/sman12/sman12.png" alt="sman 12 surabaya" loading="lazy">
-                  <div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="ajax/sman12.html"></a>
-                    <div class="portfolio-overlay-details">
-                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
-                      <h5 class="text-white text-5">Website School</h5>
-                      <span class="text-light">Web</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            // Render functions with multilanguage support
+            function renderPersonalInfo() {
+                const section = document.getElementById("personalInfoSection");
+                const personalData = getCurrentPersonalInfo();
+                const contactsHTML = personalData.contacts
+                    .map(
+                        (contact) =>
+                            `<a href="${contact.href}" ${contact.type === "linkedin" || contact.type === "github" ? 'target="_blank"' : ""}
+                     class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition">
+                        <i class="${contact.icon} mr-1"></i>${contact.value}
+                    </a>`,
+                    )
+                    .join("");
 
-            <div class="col-sm-6 col-lg-4 cert">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/dicoding/beginner/beginner-cert.jpg" alt="beginner certificates dicoding ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> 
-                    <div class="portfolio-overlay-details"> <a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://www.dicoding.com/certificates/81P278W58ZOY"></a>
-                      <p class="text-primary text-8"><i class="fa fa-external-link"></i></p>
-                      <h5 class="text-white text-5">Beginner idcamp x dicoding flutter</h5>
-                      <span class="text-light">Certificates</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                section.innerHTML = `
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+                        <div class="relative profile-image">
+                            <img src="${personalData.profileImage}" alt="Profile Photo"
+                                 class="w-32 h-32 rounded-full object-cover border-4 border-indigo-500 dark:border-indigo-400" />
+                            <div class="absolute bottom-0 right-0 w-8 h-8 bg-green-500 rounded-full border-2 border-white dark:border-gray-800"></div>
+                        </div>
+                        <div class="text-center md:text-left flex-1">
+                            <h2 class="text-3xl font-bold mb-2">${personalData.name}</h2>
+                            <h3 class="text-xl text-indigo-600 dark:text-indigo-400 mb-3">${personalData.title}</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">${personalData.description}</p>
+                            <div class="flex flex-wrap gap-3 justify-center md:justify-start contact-info">
+                                ${contactsHTML}
+                            </div>
+                        </div>
+                    </div>
+                `;
 
-            <div class="col-sm-6 col-lg-4 cert">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/dicoding/intermediate/intermediate-cert.jpg" alt="dicoding intermediate certificates ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> 
-                    <div class="portfolio-overlay-details"> <a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://www.dicoding.com/certificates/81P2V7KDJPOY"></a>
-                      <p class="text-primary text-8"><i class="fa fa-external-link"></i></p>
-                      <h5 class="text-white text-5">Intermediate idcamp x dicoding flutter</h5>
-                      <span class="text-light">Certificates</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                // Update header and footer
+                document.getElementById("headerName").textContent =
+                    personalData.name;
+                document.getElementById("footerName").textContent =
+                    personalData.name;
+            }
 
-            <div class="col-sm-6 col-lg-4 cert">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/project/dicoding/expert/expert-cert.jpg" alt="expert certificates dicoding ifqy gifha azhar" loading="lazy">
-                  <div class="portfolio-overlay"> 
-                    <div class="portfolio-overlay-details"> <a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://www.dicoding.com/certificates/53XEY5V3RPRN"></a>
-                      <p class="text-primary text-8"><i class="fa fa-external-link"></i></p>
-                      <h5 class="text-white text-5">Expert idcamp x dicoding flutter</h5>
-                      <span class="text-light">Certificates</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            function renderSkills() {
+                const section = document.getElementById("skillsSection");
+                const skillsData = getCurrentSkills();
+                const skillsHTML = skillsData
+                    .map((skillCategory) => {
+                        const badgesHTML = skillCategory.items
+                            .map(
+                                (skill) =>
+                                    `<span class="skill-badge px-3 py-1 bg-${skillCategory.color}-100 dark:bg-${skillCategory.color}-900/50 text-${skillCategory.color}-800 dark:text-${skillCategory.color}-300 rounded-full text-sm">
+                            ${skill}
+                        </span>`,
+                            )
+                            .join("");
 
-            <div class="col-sm-6 col-lg-4 cert">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/cert/Multi-Platform Inter.jpg" alt="Multi platform idcamp certificates" loading="lazy">
-                  <div class="portfolio-overlay"> 
-                    <div class="portfolio-overlay-details"> <a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://drive.google.com/file/d/1WG3A1DlsW9lce3-Da9X0mXruuxeGGj0b/view?usp=sharing"></a>
-                      <p class="text-primary text-8"><i class="fa fa-file-pdf-o"></i></p>
-                      <h5 class="text-white text-5">Multi-Platform App Developer Program IDCamp 2023 Level Intermediate</h5>
-                      <span class="text-light">Certificates</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                        const textVersion = skillCategory.items.join(", ");
 
-            <div class="col-sm-6 col-lg-4 cert">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/cert/udemy-flutter.jpg" alt="udemy flutter beginner to expert ifqy gifha azhar certificates" loading="lazy">
-                  <div class="portfolio-overlay"> 
-                    <div class="portfolio-overlay-details"> <a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://www.udemy.com/certificate/UC-22618e29-a877-4503-aea8-247090a60469/"></a>
-                      <p class="text-primary text-8"><i class="fa fa-external-link"></i></p>
-                      <h5 class="text-white text-5">Flutter & Dart Complete Guide 2024</h5>
-                      <span class="text-light">Certificates</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                        return `
+                        <div class="skill-category">
+                            <h4 class="font-semibold mb-3 text-lg">${skillCategory.category}</h4>
+                            <div class="flex flex-wrap gap-2 skills-list">
+                                ${badgesHTML}
+                            </div>
+                            <div class="skills-text" style="display: none">${textVersion}</div>
+                        </div>
+                    `;
+                    })
+                    .join("");
 
-            <div class="col-sm-6 col-lg-4 cert">
-              <div class="portfolio-box">
-                <div class="portfolio-img"> <img class="img-fluid d-block" src="assets/cert/[Bangkit 2024 Batch 2] Certificate - A764B4KY1909-1.webp" alt="bangkit academy mobile developer ifqy gifha azhar certificates" loading="lazy">
-                  <div class="portfolio-overlay"> 
-                    <div class="portfolio-overlay-details"> <a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://drive.google.com/file/d/1gM5jSR5-8-NaDSSuletoPoTj73DVUVE7/view?usp=sharing"></a>
-                      <p class="text-primary text-8"><i class="fa fa-external-link"></i></p>
-                      <h5 class="text-white text-5">Bangkit Academy</h5>
-                      <span class="text-light">Certificates</span> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
+                section.innerHTML = skillsHTML;
+            }
 
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio end --> 
-   
-     <!-- Contact Me
-    ============================================= -->
-    <section id="contact" class="section bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 text-center text-lg-start wow fadeInUp">
-            <h2 class="text-10 fw-600 mb-5">Let's get in touch</h2>
-            <p class="text-5 mb-5">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
-            <h3 class="text-5 fw-600">Living In:</h3>
-            <address class="text-4">
-            Pangandaran West Java
-            </address>
-            <h3 class="text-5 fw-600">Call:</h3>
-            <p class="text-4">+62 851 5629 8681</p>
-            <ul class="social-icons social-icons-lg justify-content-center justify-content-lg-start mt-5">
-              <li class="social-icons-instagram"><a data-bs-toggle="tooltip" href="https://www.instagram.com/ifqygifha_azhar/?hl=id" target="_blank" title="" data-bs-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
-              <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://github.com/ifqygazhar" target="_blank" title="" data-bs-original-title="GitHub"><i class="fab fa-github"></i></a></li>
-              <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/ifqygazhar/" target="_blank" title="" data-bs-original-title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-              <li class="social-icons-dribbble"><a data-bs-toggle="tooltip" href="https://dribbble.com/ifqyGazhar" target="_blank" title="" data-bs-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-lg-6 ms-auto mt-5 mt-lg-0 wow fadeInUp" data-wow-delay="0.3s">
-            <h2 class="text-10 fw-600 text-center text-lg-start mb-5">Estimate your Project?</h2>
-            <!-- Contact Form -->
-            <form id="contact-form" class="form-border" action="mailto:ifqygazhar@gmail.com" method="post" enctype="text/plain">
-              <div class="row g-4">
+            function renderWorkExperience() {
+                const section = document.getElementById("experienceSection");
+                const experienceData = getCurrentWorkExperience();
+                const texts = getCurrentUITexts();
 
-                <div class="col-12">
-                  <label class="form-label" for="name">What is Your Name:</label>
-                  <input id="name" name="name" type="text" class="form-control py-1" required >
-                </div>
-                
-                <div class="col-12">
-                  <label class="form-label" for="form-message">How can I Help you?:</label>
-                  <textarea id="form-message" name="message" class="form-control py-1" rows="4" required ></textarea>
-                </div>
-                <div class="col-12 text-center text-lg-start">
-                  <button id="submit-btn" class="btn btn-dark rounded-0" onclick="sendEmail()" type="submit">Send <span class="ms-3"><i class="fas fa-arrow-right"></i></span></button>
-                </div>
-              </div>
-            </form>
-            <!-- Contact Form end --> 
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Me end --> 
-    
-  </div>
+                const experienceHTML = experienceData
+                    .map((job) => {
+                        const responsibilitiesHTML = job.responsibilities
+                            .map((resp) => `<li>${resp}</li>`)
+                            .join("");
 
-  <!-- Content end --> 
-  
-  <!-- Footer
-  ============================================= -->
-  <footer id="footer" class="section bg-dark text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 text-center text-lg-start wow fadeInUp">
-          <p class="mb-2 mb-lg-0">Copyright © 2024 <a class="fw-600" href="#">ifqygazhar</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer end --> 
-  
-</div>
-<!-- Document Wrapper end --> 
-<!-- Back to Top
-============================================= --> 
-<a id="back-to-top" class="rounded-circle" data-bs-toggle="tooltip" title="Back to Top" href="#"><i class="fas fa-arrow-up"></i></a> 
+                        return `
+                        <div class="border-l-4 border-indigo-600 dark:border-indigo-400 pl-4 experience-item">
+                            <h4 class="font-bold text-lg">${job.position}</h4>
+                            <p class="text-indigo-600 dark:text-indigo-400 font-medium experience-company">
+                                ${job.company} • ${job.location}
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-2 experience-date">${job.period}</p>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 experience-list">
+                                ${responsibilitiesHTML}
+                            </ul>
+                        </div>
+                    `;
+                    })
+                    .join("");
 
-<!-- JavaScript --> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.bundle.min.js"></script> 
-<!-- Easing --> 
-<script src="js/jquery.easing.min.js"></script> 
-<!-- Appear --> 
-<script src="js/jquery.appear.min.js"></script> 
-<!-- WOW animation --> 
-<script src="js/wow.min.js"></script> 
-<!-- Images Loaded --> 
-<script src="js/imagesloaded.pkgd.min.js"></script> 
-<!-- Typed --> 
-<script src="js/typed.min.js"></script> 
-<!-- Parallax Bg --> 
-<script src="js/parallaxie.min.js"></script> 
-<!-- Owl Carousel --> 
-<script src="js/owl.carousel.min.js"></script> 
-<!-- isotope Portfolio Filter --> 
-<script src="js/isotope.pkgd.min.js"></script> 
-<!-- Magnific Popup --> 
-<script src="js/jquery.magnific-popup.min.js"></script> 
-<!-- Style Switcher --> 
-<script src="js/switcher.min.js"></script> 
-<!-- Custom Script --> 
-<script src="js/theme.js"></script>
+                section.innerHTML = experienceHTML;
+            }
 
-<script>
-  function sendEmail() {
-      const name = document.getElementById("name").value;
-      const message = document.getElementById("form-message").value;
+            function renderEducation() {
+                const section = document.getElementById("educationSection");
+                const educationData = getCurrentEducation();
+                const texts = getCurrentUITexts();
 
-      
-      const subject = "Estimate Project";
-        const body = "Name: " + name + "\n" +
-                  
-                   "Message: " + message;
+                const educationHTML = educationData
+                    .map(
+                        (edu) => `
+                    <div class="border-l-4 border-indigo-600 dark:border-indigo-400 pl-4 education-item">
+                        <h4 class="font-bold text-lg">${edu.degree}</h4>
+                        <p class="text-indigo-600 dark:text-indigo-400 font-medium">
+                            ${edu.institution} • ${edu.location}
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">${edu.period}</p>
+                        ${edu.gpa ? `<p class="text-gray-700 dark:text-gray-300 mt-2">${texts.gpa}: ${edu.gpa}</p>` : ""}
+                    </div>
+                `,
+                    )
+                    .join("");
 
+                section.innerHTML = educationHTML;
+            }
 
-     
-      const mailtoURL = "mailto:ifqygazhar@gmail.com" + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            function renderCertifications() {
+                const section = document.getElementById(
+                    "certificationsSection",
+                );
+                const texts = getCurrentUITexts();
 
-     
-      window.location.href = mailtoURL;
-  }
-</script>
+                const certificationsHTML = certifications
+                    .map(
+                        (cert) => `
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg cert-item">
+                        <h4 class="font-semibold">${cert.name}</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">
+                            ${cert.issuer} • ${cert.year}
+                            ${cert.certificateUrl ? `• <a class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300" href="${cert.certificateUrl}">${texts.certificate}</a>` : ""}
+                        </p>
+                    </div>
+                `,
+                    )
+                    .join("");
 
+                section.innerHTML = certificationsHTML;
+            }
 
+            function renderProjects() {
+                const section = document.getElementById("projectsSection");
+                const projectsData = getCurrentProjects();
+                const texts = getCurrentUITexts();
 
-</body>
+                const projectsHTML = projectsData
+                    .map((project) => {
+                        const techBadgesHTML = project.technologies
+                            .map(
+                                (tech) =>
+                                    `<span class="px-2 py-1 bg-${project.color}-100 dark:bg-${project.color}-900/50 text-${project.color}-800 dark:text-${project.color}-300 rounded text-xs">
+                            ${tech}
+                        </span>`,
+                            )
+                            .join("");
+
+                        return `
+                        <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                            <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">${project.title}</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">${project.description}</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    ${techBadgesHTML}
+                                </div>
+                                <button onclick="openProject('${project.id}')"
+                                        class="w-full gradient-bg text-white py-2 px-4 rounded-lg hover:opacity-90 transition">
+                                    <i class="fas fa-external-link-alt mr-2"></i>${texts.open}
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    })
+                    .join("");
+
+                section.innerHTML = projectsHTML;
+            }
+
+            function renderFooterContacts() {
+                const section = document.getElementById("footerContacts");
+                const personalData = getCurrentPersonalInfo();
+                const contactsHTML = personalData.contacts
+                    .map((contact) => {
+                        let bgColor = "bg-indigo-600 hover:bg-indigo-700";
+                        if (contact.type === "whatsapp")
+                            bgColor = "bg-green-600 hover:bg-green-700";
+
+                        return `
+                        <a href="${contact.href}" ${contact.type === "linkedin" || contact.type === "github" ? 'target="_blank"' : ""}
+                           class="${bgColor} p-3 rounded-full transition">
+                            <i class="${contact.icon}"></i>
+                        </a>
+                    `;
+                    })
+                    .join("");
+
+                // Add WhatsApp if not in contacts
+                const hasWhatsApp = personalData.contacts.some(
+                    (c) => c.type === "whatsapp",
+                );
+                if (!hasWhatsApp) {
+                    const phoneContact = personalData.contacts.find(
+                        (c) => c.type === "phone",
+                    );
+                    if (phoneContact) {
+                        const whatsappHTML = `
+                            <a href="https://wa.me/${phoneContact.value.replace(/\D/g, "")}" target="_blank"
+                               class="bg-green-600 hover:bg-green-700 p-3 rounded-full transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        `;
+                        section.innerHTML = contactsHTML + whatsappHTML;
+                        return;
+                    }
+                }
+
+                section.innerHTML = contactsHTML;
+            }
+
+            // Initialize all sections when page loads
+            function initializePage() {
+                renderPersonalInfo();
+                renderSkills();
+                renderWorkExperience();
+                renderEducation();
+                renderCertifications();
+                renderProjects();
+                renderFooterContacts();
+                updateTextContent();
+            }
+
+            // Print CV function
+            function printCV() {
+                showTab("cv");
+                const existingNotifications =
+                    document.querySelectorAll(".notification");
+                existingNotifications.forEach((notif) => notif.remove());
+
+                setTimeout(() => {
+                    const skillsLists =
+                        document.querySelectorAll(".skills-list");
+                    const skillsTexts =
+                        document.querySelectorAll(".skills-text");
+
+                    skillsLists.forEach(
+                        (list) => (list.style.display = "none"),
+                    );
+                    skillsTexts.forEach(
+                        (text) => (text.style.display = "block"),
+                    );
+
+                    const originalTitle = document.title;
+                    document.title = "‎ ";
+
+                    window.print();
+
+                    setTimeout(() => {
+                        skillsLists.forEach(
+                            (list) => (list.style.display = ""),
+                        );
+                        skillsTexts.forEach(
+                            (text) => (text.style.display = "none"),
+                        );
+                        document.title = originalTitle;
+                    }, 1000);
+                }, 100);
+            }
+
+            // Open project function
+            function openProject(projectId) {
+                const projectsData = getCurrentProjects();
+                const texts = getCurrentUITexts();
+                const project = projectsData.find((p) => p.id === projectId);
+                if (project) {
+                    showNotification(texts.openingProject);
+                    setTimeout(() => {
+                        window.open(project.githubUrl, "_blank");
+                    }, 500);
+                }
+            }
+
+            // Theme management with system preference support
+            let currentThemeMode = "auto";
+            const html = document.documentElement;
+            const themeSwitch = document.getElementById("themeSwitch");
+            const themeIndicator = document.getElementById("themeIndicator");
+            const sunIcon = document.getElementById("sunIcon");
+            const moonIcon = document.getElementById("moonIcon");
+
+            function getSystemTheme() {
+                return window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light";
+            }
+
+            function applyTheme() {
+                let actualTheme;
+                if (currentThemeMode === "auto") {
+                    actualTheme = getSystemTheme();
+                } else {
+                    actualTheme = currentThemeMode;
+                }
+
+                if (actualTheme === "dark") {
+                    html.classList.add("dark");
+                } else {
+                    html.classList.remove("dark");
+                }
+                updateThemeUI();
+            }
+
+            function updateThemeUI() {
+                themeSwitch.className = `toggle-switch ${currentThemeMode}`;
+                const indicators = {
+                    auto: "Auto",
+                    light: "Light",
+                    dark: "Dark",
+                };
+                themeIndicator.textContent = indicators[currentThemeMode];
+                sunIcon.classList.toggle(
+                    "active",
+                    currentThemeMode === "light",
+                );
+                moonIcon.classList.toggle(
+                    "active",
+                    currentThemeMode === "dark",
+                );
+            }
+
+            function setThemeMode(mode) {
+                currentThemeMode = mode;
+                localStorage.setItem("themeMode", mode);
+                applyTheme();
+            }
+
+            function cycleTheme() {
+                const modes = ["auto", "light", "dark"];
+                const currentIndex = modes.indexOf(currentThemeMode);
+                const nextIndex = (currentIndex + 1) % modes.length;
+                setThemeMode(modes[nextIndex]);
+            }
+
+            function initializeTheme() {
+                const savedThemeMode =
+                    localStorage.getItem("themeMode") || "auto";
+                currentThemeMode = savedThemeMode;
+                applyTheme();
+            }
+
+            window
+                .matchMedia("(prefers-color-scheme: dark)")
+                .addEventListener("change", () => {
+                    if (currentThemeMode === "auto") {
+                        applyTheme();
+                    }
+                });
+
+            // Tab functionality
+            function showTab(tabName) {
+                document.getElementById("cv").classList.add("hidden");
+                document.getElementById("projects").classList.add("hidden");
+
+                document.querySelectorAll(".tab-btn").forEach((btn) => {
+                    btn.classList.remove("bg-indigo-600", "text-white");
+                    btn.classList.add("text-gray-600", "dark:text-gray-300");
+                });
+
+                document.getElementById(tabName).classList.remove("hidden");
+
+                const activeTab = document.getElementById(tabName + "Tab");
+                activeTab.classList.remove(
+                    "text-gray-600",
+                    "dark:text-gray-300",
+                );
+                activeTab.classList.add("bg-indigo-600", "text-white");
+
+                history.pushState(null, null, "#" + tabName);
+            }
+
+            function toggleMobileMenu() {
+                const mobileMenu = document.getElementById("mobileMenu");
+                mobileMenu.classList.toggle("hidden");
+            }
+
+            function showNotification(message) {
+                const existingNotifications =
+                    document.querySelectorAll(".notification");
+                existingNotifications.forEach((notif) => notif.remove());
+
+                const notification = document.createElement("div");
+                notification.className = "notification";
+                notification.textContent = message;
+
+                document.body.appendChild(notification);
+
+                setTimeout(() => {
+                    notification.classList.add("show");
+                }, 100);
+
+                setTimeout(() => {
+                    notification.classList.remove("show");
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            notification.parentNode.removeChild(notification);
+                        }
+                    }, 300);
+                }, 2000);
+            }
+
+            // Initialize everything when page loads
+            window.addEventListener("load", () => {
+                initializeLanguage();
+                initializePage();
+                initializeTheme();
+
+                const hash = window.location.hash.substring(1);
+                if (hash === "projects") {
+                    showTab("projects");
+                } else {
+                    showTab("cv");
+                }
+            });
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Add scroll effect to header
+            window.addEventListener("scroll", () => {
+                const header = document.querySelector("header");
+                if (window.scrollY > 50) {
+                    header.classList.add("shadow-lg");
+                } else {
+                    header.classList.remove("shadow-lg");
+                }
+            });
+
+            // Lazy loading for images
+            if ("IntersectionObserver" in window) {
+                const imageObserver = new IntersectionObserver(
+                    (entries, observer) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                img.classList.add("loaded");
+                                observer.unobserve(img);
+                            }
+                        });
+                    },
+                );
+
+                document.querySelectorAll("img").forEach((img) => {
+                    imageObserver.observe(img);
+                });
+            }
+        </script>
+    </body>
 </html>
