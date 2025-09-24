@@ -686,7 +686,8 @@
 
                         return `
                         <a href="${contact.href}" ${contact.type === "linkedin" || contact.type === "github" ? 'target="_blank"' : ""}
-                           class="${bgColor} p-3 rounded-full transition">
+                           class="${bgColor} w-12 h-12 rounded-full transition
+                                     flex items-center justify-center">
                             <i class="${contact.icon}"></i>
                         </a>
                     `;
@@ -704,7 +705,8 @@
                     if (phoneContact) {
                         const whatsappHTML = `
                             <a href="https://wa.me/${phoneContact.value.replace(/\D/g, "")}" target="_blank"
-                               class="bg-green-600 hover:bg-green-700 p-3 rounded-full transition">
+                               class="bg-green-600 hover:bg-green-700 w-12 h-12 rounded-full transition
+                                         flex items-center justify-center">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         `;
