@@ -380,6 +380,104 @@
 
         <!-- JavaScript -->
         <script>
+            let lastScrollTop = 0;
+            let scrollTimeout;
+            const header = document.querySelector("header");
+            const body = document.body;
+            const isMobile = () => window.innerWidth <= 768;
+
+            function handleScroll() {
+                if (!isMobile()) {
+                    // Reset header position for desktop
+                    header.classList.remove("header-hidden");
+                    body.classList.remove("header-padding");
+                    return;
+                }
+
+                const scrollTop =
+                    window.pageYOffset || document.documentElement.scrollTop;
+                const scrollDifference = scrollTop - lastScrollTop;
+
+                // Clear existing timeout
+                if (scrollTimeout) {
+                    clearTimeout(scrollTimeout);
+                }
+
+                // Hide header when scrolling down, show when scrolling up
+                if (scrollDifference > 5 && scrollTop > 100) {
+                    // Scrolling down - hide header
+                    header.classList.add("header-hidden");
+                    body.classList.add("header-padding");
+                } else if (scrollDifference < -5 || scrollTop <= 100) {
+                    // Scrolling up or near top - show header
+                    header.classList.remove("header-hidden");
+                    body.classList.remove("header-padding");
+                }
+
+                // Auto-show header after user stops scrolling
+                scrollTimeout = setTimeout(() => {
+                    if (isMobile() && scrollTop > 100) {
+                        header.classList.remove("header-hidden");
+                    }
+                }, 2000); // Show header 2 seconds after scrolling stops
+
+                lastScrollTop = scrollTop;
+            }
+
+            // Touch/hover zone to show header on mobile
+            function createHeaderShowZone() {
+                if (!isMobile()) return;
+
+                const showZone = document.createElement("div");
+                showZone.className = "header-show-zone";
+
+                // Show header when touching near top of screen
+                showZone.addEventListener("touchstart", () => {
+                    header.classList.remove("header-hidden");
+                    body.classList.remove("header-padding");
+                });
+
+                document.body.appendChild(showZone);
+            }
+
+            // Handle window resize
+            function handleResize() {
+                if (!isMobile()) {
+                    header.classList.remove("header-hidden");
+                    body.classList.remove("header-padding");
+
+                    // Remove show zone if it exists
+                    const showZone =
+                        document.querySelector(".header-show-zone");
+                    if (showZone) {
+                        showZone.remove();
+                    }
+                } else {
+                    createHeaderShowZone();
+                }
+            }
+
+            // Initialize auto-hide functionality
+            function initializeAutoHide() {
+                // Add scroll listener with throttling
+                let ticking = false;
+
+                window.addEventListener("scroll", () => {
+                    if (!ticking) {
+                        requestAnimationFrame(() => {
+                            handleScroll();
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+
+                // Add resize listener
+                window.addEventListener("resize", handleResize);
+
+                // Initial setup
+                handleResize();
+            }
             document.getElementById("footerYear").textContent =
                 new Date().getFullYear();
 
@@ -813,6 +911,7 @@
                 initializeLanguage();
                 initializePage();
                 initializeTheme();
+                initializeAutoHide(); // Add this line
 
                 const hash = window.location.hash.substring(1);
                 if (hash === "projects") {

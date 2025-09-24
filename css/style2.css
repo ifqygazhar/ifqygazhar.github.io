@@ -242,6 +242,52 @@ html {
     }
 }
 
+/* Auto-hide header for mobile */
+@media (max-width: 768px) {
+    header {
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    header.header-hidden {
+        transform: translateY(-100%);
+    }
+
+    /* Add padding to body when header is sticky to prevent content jump */
+    body {
+        padding-top: 0;
+        transition: padding-top 0.3s ease-in-out;
+    }
+
+    body.header-padding {
+        padding-top: 80px; /* Adjust based on your header height */
+    }
+}
+
+/* Smooth header transition for all devices */
+header {
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+}
+
+/* Show header when hovering near top of screen on mobile */
+@media (max-width: 768px) {
+    .header-show-zone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 60;
+        pointer-events: none;
+    }
+
+    .header-show-zone:hover ~ header {
+        transform: translateY(0) !important;
+    }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
