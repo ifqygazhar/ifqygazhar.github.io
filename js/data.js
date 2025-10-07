@@ -459,7 +459,7 @@ const projects = {
     },
     {
       id: "Mangaloom",
-      title: "Mangaloom - Read Comics for Free",
+      title: "Mangaloom Mobile - Read Comics for Free",
       description:
         "Free comic reading application with complete features and no ads!, Built with Flutter.",
       image: "./assets/images/mangaloom.png",
@@ -475,6 +475,16 @@ const projects = {
       ],
       color: "indigo",
       githubUrl: "#",
+    },
+    {
+      id: "Mangaloom Website",
+      title: "Mangaloom Website - Read Comics for Free",
+      description:
+        "Free comic reading application with complete features and no ads!, Built with Flutter.",
+      image: "./assets/images/mangaloom-2.png",
+      technologies: ["Svelte 5", "SveleteKit"],
+      color: "orange",
+      githubUrl: "https://github.com/ifqygazhar/mangaloom_sveltekit",
     },
     {
       id: "Sman 12",
@@ -530,7 +540,7 @@ const projects = {
     },
     {
       id: "Mangaloom",
-      title: "Mangaloom - Baca Komik Gratis",
+      title: "Mangaloom Mobile - Baca Komik Gratis",
       description:
         "Aplikasi baca komik gratis dengan fitur lengkap dan tanpa iklan!, Dibuat dengan Flutter.",
       image: "./assets/images/mangaloom.png",
@@ -546,6 +556,16 @@ const projects = {
       ],
       color: "indigo",
       githubUrl: "#",
+    },
+    {
+      id: "Mangaloom Website",
+      title: "Mangaloom Website - Read Comics for Free",
+      description:
+        "Free comic reading application with complete features and no ads!, Built with Flutter.",
+      image: "./assets/images/mangaloom-2.png",
+      technologies: ["Svelte 5", "SveleteKit"],
+      color: "orange",
+      githubUrl: "https://github.com/ifqygazhar/mangaloom_sveltekit",
     },
     {
       id: "Sman 12",
