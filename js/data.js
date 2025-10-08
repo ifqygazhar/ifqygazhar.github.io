@@ -484,7 +484,7 @@ const projects = {
       image: "./assets/images/mangaloom-2.png",
       technologies: ["Svelte 5", "SveleteKit"],
       color: "orange",
-      githubUrl: "https://github.com/ifqygazhar/mangaloom_sveltekit",
+      githubUrl: "https://mangaloom.app/",
     },
     {
       id: "Sman 12",
@@ -565,7 +565,7 @@ const projects = {
       image: "./assets/images/mangaloom-2.png",
       technologies: ["Svelte 5", "SveleteKit"],
       color: "orange",
-      githubUrl: "https://github.com/ifqygazhar/mangaloom_sveltekit",
+      githubUrl: "https://mangaloom.app/",
     },
     {
       id: "Sman 12",
