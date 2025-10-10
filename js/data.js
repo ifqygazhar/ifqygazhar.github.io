@@ -474,7 +474,8 @@ const projects = {
         "notification",
       ],
       color: "indigo",
-      githubUrl: "#",
+      githubUrl:
+        "https://play.google.com/store/apps/details?id=id.mangaloom.app&hl=id",
     },
     {
       id: "Mangaloom Website",
@@ -555,7 +556,8 @@ const projects = {
         "notification",
       ],
       color: "indigo",
-      githubUrl: "#",
+      githubUrl:
+        "https://play.google.com/store/apps/details?id=id.mangaloom.app&hl=id",
     },
     {
       id: "Mangaloom Website",
